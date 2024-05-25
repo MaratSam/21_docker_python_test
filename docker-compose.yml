@@ -1,0 +1,7 @@
+version: '3'
+services:
+  myservice:
+    image: my-image
+    environment:
+      - MY_VAR=value
+      - MY_VAR2=value2

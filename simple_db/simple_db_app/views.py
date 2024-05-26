@@ -17,3 +17,9 @@ def list(request):
 class HelloView(View):
     def get(self, request, *args, **kwargs):
         return HttpResponse("'hello' URL")
+    
+
+class ByeView(View):
+    def get(self, request, *args, **kwargs):
+        return HttpResponse("'Bye!!!' URL")    
+

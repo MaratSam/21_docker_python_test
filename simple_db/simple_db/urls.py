@@ -1,3 +1,5 @@
+from simple_db_app import views
+from django.views.generic import RedirectView
 """
 URL configuration for simple_db project.
 
@@ -19,4 +21,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.list, name="list"),
+    path('favicon.ico', RedirectView.as_view(url='static/simple_db_app/images/favicon.ico')),
+    path("hello/", views.HelloView.as_view(), name="hello-view"),
 ]

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'simple_db_app/images/favicon.ico' %}">
+    <title>Document</title>
+</head>
+<body>
+    The list of the records:
+
+    {% for record in records %}
+    <br>
+    Record {{ forloop.counter }} : {{record.name}}
+    <br>
+    {% endfor %}
+
+    
+</body>
+</html>

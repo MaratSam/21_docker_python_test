@@ -22,5 +22,5 @@ class HelloView(View):
 class ByeView(View):
     def get(self, request, *args, **kwargs):
         return HttpResponse("'Bye!!!!!!!!' URL")   
-    #change in branch thing2 
+    #change in branch thing22 
 

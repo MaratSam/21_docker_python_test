@@ -22,6 +22,7 @@ class HelloView(View):
 class ByeView(View):
     def get(self, request, *args, **kwargs):
 
+
         return HttpResponse("'Bye!!!!!!!'  URL")    
 
 

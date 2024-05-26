@@ -24,4 +24,5 @@ urlpatterns = [
     path('', views.list, name="list"),
     path('favicon.ico', RedirectView.as_view(url='static/simple_db_app/images/favicon.ico')),
     path("hello/", views.HelloView.as_view(), name="hello-view"),
+    path("bye/", views.ByeView.as_view(), name="bye-view"),
 ]
